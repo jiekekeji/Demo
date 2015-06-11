@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    tools:context="com.wh.demo.MainActivity" >
+
+    <TextView
+        android:id="@+id/acName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:text="类名" />
+
+    <TextView
+        android:id="@+id/acDec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:text="描述" />
+
+</LinearLayout>
