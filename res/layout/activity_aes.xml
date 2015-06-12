@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wh.demo.MainActivity" >
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="加密前" />
+
+    <EditText
+        android:id="@+id/yiyue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密钥" />
+
+    <EditText
+        android:id="@+id/enContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="加密后" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加密" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解密" />
+
+</LinearLayout>

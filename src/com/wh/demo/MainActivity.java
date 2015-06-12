@@ -20,6 +20,8 @@ import com.wh.demo.app.CustomDialog;
 import com.wh.demo.app.MactionBar;
 import com.wh.demo.bean.AcInfo;
 import com.wh.demo.download.DownLoader;
+import com.wh.demo.encrypt.AESActivity;
+import com.wh.demo.service.ActivitySer1;
 import com.wh.demo.view.ListAnim;
 import com.wh.demo.view.Mgallery;
 
@@ -49,6 +51,8 @@ public class MainActivity extends Activity {
 		acInfos.add(new AcInfo("以动画的方式展示item", ListAnim.class));
 		acInfos.add(new AcInfo("gallery的使用", Mgallery.class));
 		acInfos.add(new AcInfo("DownLoader.jar多线程下载", DownLoader.class));
+		acInfos.add(new AcInfo("开始服务检测版本号", ActivitySer1.class));
+		acInfos.add(new AcInfo("AES加密实例", AESActivity.class));
 
 		listview.setAdapter(new MainAdapter(acInfos, this));
 	}
