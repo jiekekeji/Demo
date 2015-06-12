@@ -47,6 +47,14 @@
         </activity>
         <activity android:name=".encrypt.AESActivity" >
         </activity>
+        <activity android:name=".fragment.FraActivity" >
+        </activity>
+        <activity android:name=".view.LVActivity" >
+        </activity>
+        <activity android:name=".view.RadioButtonActivity" >
+        </activity>
+        <activity android:name=".view.MulListViewActivity" >
+        </activity>
 
         <service android:name=".service.Service1" >
         </service>

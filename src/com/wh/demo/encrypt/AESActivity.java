@@ -31,6 +31,12 @@ public class AESActivity extends Activity {
 	@ViewInject(R.id.enContent)
 	EditText enContentEt;
 
+	@ViewInject(R.id.md1)
+	EditText md1;
+
+	@ViewInject(R.id.md2)
+	EditText md2;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -53,7 +59,8 @@ public class AESActivity extends Activity {
 		}
 
 		try {
-			enContentEt.setText(AESUtils.encrypt(miyue, content));
+			enContentEt
+					.setText(AESUtils.encrypt(miyue, MD5Utils.toMD5(content)));
 			contentEt.setText("");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -77,4 +84,21 @@ public class AESActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
+
+	@OnClick(R.id.md5)
+	public void toMd5(View view) {
+		String md1Content = md1.getText().toString();
+
+		if (TextUtils.isEmpty(md1Content)) {
+			Toast.makeText(this, "请认真输入", Toast.LENGTH_SHORT).show();
+			return;
+		}
+
+		try {
+			md2.setText(MD5Utils.toMD5(md1Content));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }
