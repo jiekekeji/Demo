@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wh.lv.demo.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 第一类 -->
+
+        <RadioGroup
+            android:id="@+id/gp_001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gp_001_rb_001"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="第一种"
+                android:textColor="@drawable/radio1_textcolor" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/gp_001_rb_002"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:button="@null"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="第二种"
+                android:textColor="@drawable/radio1_textcolor" />
+        </RadioGroup>
+
+        <!-- 第二类 -->
+
+        <RadioGroup
+            android:id="@+id/gp_002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/light_blue"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gp_002_rb_001"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第一种" />
+
+            <RadioButton
+                android:id="@+id/gp_002_rb_002"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第二种" />
+
+            <RadioButton
+                android:id="@+id/gp_002_rb_003"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第一种" />
+
+            <RadioButton
+                android:id="@+id/gp_002_rb_004"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第二种" />
+        </RadioGroup>
+
+        <!-- 第三类 -->
+
+        <RadioGroup
+            android:id="@+id/gp_003"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_blue"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gp_003_rb_001"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第一种" />
+
+            <RadioButton
+                android:id="@+id/gp_003_rb_002"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="100"
+                android:background="@drawable/radio2"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="第二种" />
+        </RadioGroup>
+    </LinearLayout>
+
+</ScrollView>
