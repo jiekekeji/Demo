@@ -43,6 +43,33 @@
         </activity>
         <activity android:name=".download.DownLoader" >
         </activity>
+        <activity android:name=".service.ActivitySer1" >
+        </activity>
+        <activity android:name=".encrypt.AESActivity" >
+        </activity>
+        <activity android:name=".fragment.FraActivity" >
+        </activity>
+        <activity android:name=".view.LVActivity" >
+        </activity>
+        <activity android:name=".view.RadioButtonActivity" >
+        </activity>
+        <activity android:name=".view.MulListViewActivity" >
+        </activity>
+        <activity android:name=".view.HorizontalListViewDemo" >
+        </activity>
+
+        <service android:name=".service.Service1" >
+        </service>
+
+        <receiver android:name="com.wh.demo.cast.ScreenBroadcastReceiver" >
+            <intent-filter>
+
+                <!-- 接收屏幕状态改变的广播 ,4.0后貌似收不到 -->
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.ACTION_USER_PRESENT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

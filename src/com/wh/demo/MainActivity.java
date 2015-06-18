@@ -23,6 +23,7 @@ import com.wh.demo.download.DownLoader;
 import com.wh.demo.encrypt.AESActivity;
 import com.wh.demo.fragment.FraActivity;
 import com.wh.demo.service.ActivitySer1;
+import com.wh.demo.view.HorizontalListViewDemo;
 import com.wh.demo.view.LVActivity;
 import com.wh.demo.view.ListAnim;
 import com.wh.demo.view.Mgallery;
@@ -62,6 +63,8 @@ public class MainActivity extends Activity {
 		acInfos.add(new AcInfo("自定义样式的RadioButton", RadioButtonActivity.class));
 		acInfos.add(new AcInfo("listView放置不同的item,可做复杂界面",
 				MulListViewActivity.class));
+
+		acInfos.add(new AcInfo("横向lsitView", HorizontalListViewDemo.class));
 
 		listview.setAdapter(new MainAdapter(acInfos, this));
 	}
